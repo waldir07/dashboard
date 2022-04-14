@@ -1,0 +1,21 @@
+@use '../../scss/abstracts/' as *;
+
+.progress-bar{
+    height: 10px;
+    background-color: $bodyBg;
+    border-radius: 2.5px;
+    -webkit-border-radius: 2.5px;
+    -moz-border-radius: 2.5px;
+    -ms-border-radius: 2.5px;
+    -o-border-radius: 2.5px;
+
+    &__inner{
+        border-radius: 2.5px;
+        -webkit-border-radius: 2.5px;
+        -moz-border-radius: 2.5px;
+        -ms-border-radius: 2.5px;
+        -o-border-radius: 2.5px;
+        height: 100%;
+        background-color: $orange;
+    }
+}

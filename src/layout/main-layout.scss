@@ -1,0 +1,43 @@
+@use '../scss/abstracts/' as *;
+
+.main{
+    padding-left: $sideBarWidth;
+    overflow-x: hidden;
+    @include tablet{
+        padding-left: 0;
+        width: 100vw;
+    }
+    &__content {
+        min-height: 100vh;
+        padding: $spacing;
+        transition: all 0.5s  ease-in-out;
+        -webkit-transition: all 0.5s  ease-in-out;
+        -moz-transition: all 0.5s  ease-in-out;
+        -ms-transition: all 0.5s  ease-in-out;
+        -o-transition: all 0.5s  ease-in-out;
+
+        @include tablet{
+            padding: $mobileSpacing;
+            position: relative;
+            background-color: $bodyBg;
+            z-index: 100;
+        }
+    }   
+}
+
+.sidebar-open .main__content{
+    height: 100vh;
+    overflow: hidden;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    transform: scale(0.7) translateX(50%);
+    -webkit-transform: scale(0.7) translateX(50%);
+    -moz-transform: scale(0.7) translateX(50%);
+    -ms-transform: scale(0.7) translateX(50%);
+    -o-transform: scale(0.7) translateX(50%);
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
